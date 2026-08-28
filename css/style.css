@@ -331,6 +331,16 @@ section { scroll-margin-top: 72px; }
   justify-content: center;
 }
 
+.badge-icon img {
+  width: 62%;
+  height: 62%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* the monogram is the fallback: hidden while the icon <img> is present */
+.badge-icon img ~ span { display: none; }
+
 .project-badge span {
   font-size: 18px;
   font-weight: 850;
