@@ -13,23 +13,37 @@ place to put a face to the name before you meet me, or after.
 
 ## What's here
 
-This repository holds the source for the site. It covers:
+This repository holds the source for the site — a single-page portfolio with:
 
-- **Who I am** — a short introduction and background
-- **CV** — where I've worked and what I did there
-- **Portfolio** — selected projects and things I've shipped
+- **Hero** — who I am, with an orbiting-rings portrait and a rolling ticker
+- **About** — background and quick facts
+- **The Lab** — side projects I've built for fun
+- **Track record** — growth, by the numbers
+- **Journey** — the career timeline, from art director to head of product
 - **Contact** — how to reach me
 
-## Development
+## Stack
 
-The site is in its early days — stack and build instructions will land here as
-the code does. The general plan:
+No frameworks, no build step — just static files:
+
+- `index.html` — all content and markup
+- `css/style.css` — styles, animations, and mobile-responsive breakpoints
+- `js/main.js` — a live Boulder clock and the mobile nav toggle
+- `images/` — optimized portrait (WebP + JPEG fallback) and favicon
+
+Fonts (Archivo + Space Mono) load from Google Fonts. The layout is
+mobile-optimized with breakpoints at 960px, 820px, 640px, and 560px, and
+respects `prefers-reduced-motion`.
+
+## Development
 
 ```
 git clone https://github.com/j1mtones/timjone.es.git
 cd timjone.es
-# setup instructions coming soon
+python3 -m http.server   # then open http://localhost:8000
 ```
+
+There's nothing to install or compile — edit the files and refresh.
 
 ## Get in touch
 
