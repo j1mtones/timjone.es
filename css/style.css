@@ -364,6 +364,15 @@ section { scroll-margin-top: 72px; }
   margin-top: 6px;
 }
 
+.project-context {
+  font-family: 'Space Mono', monospace;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--faint);
+  margin-top: 6px;
+}
+
 .project-links { display: flex; gap: 10px; }
 
 .project-links a {
